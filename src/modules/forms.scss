@@ -1,0 +1,23 @@
+form {
+  @include panel;
+  text-align: right;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 65%;
+  border-radius: $border-radius;
+  border: 1px solid gray;
+  outline: 3px solid #eee;
+  padding: 0.25rem 0.5rem;
+  margin-left: 0.5rem;
+
+  &:focus {
+    border: 1px solid black;
+  }
+}

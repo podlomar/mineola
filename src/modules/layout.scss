@@ -1,4 +1,3 @@
-@import "modern-css-reset/dist/reset";
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 html {
@@ -16,19 +15,19 @@ body {
 }
 
 .container {
-  @include centered();
+  @include centered;
   @include breakpoint-lg {
     max-width: 960px;
   }
 }
 
 .small-container {
-  @include centered();
+  @include centered;
   max-width: 640px;
 }
 
 .tiny-container {
-  @include centered();
+  @include centered;
   max-width: 320px;
 }
 

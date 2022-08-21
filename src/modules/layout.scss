@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+$padding-lg-x: 2rem;
+
 html {
   font-family: "Poppins", sans-serif;
   font-size: $font-size;
@@ -16,19 +18,28 @@ body {
 
 .container {
   @include centered;
+
+  padding-left: $padding-lg-x;
+  padding-right: $padding-lg-x;
+
   @include breakpoint-lg {
-    max-width: 960px;
+    max-width: $width-lg;
   }
 }
 
-.small-container {
+.container-md {
   @include centered;
-  max-width: 640px;
+  max-width: $width-md;
 }
 
-.tiny-container {
+.container-sm {
   @include centered;
-  max-width: 320px;
+  max-width: $width-sm;
+}
+
+.container-xs {
+  @include centered;
+  max-width: $width-xs;
 }
 
 .panel {

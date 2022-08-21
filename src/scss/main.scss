@@ -12,3 +12,7 @@ body {
     max-width: 960px;
   }
 }
+
+.panel {
+  @include panel;
+}

@@ -1,7 +1,15 @@
-$color-palette-1: #e8e8e8;
+$color-palette-1: #ececec;
+$border-radius: 5px;
 
 @mixin breakpoint-lg {
   @media (min-width: 992px) {
     @content;
   }
+}
+
+@mixin panel {
+  background-color: white;
+  padding: 2rem;
+  border-radius: $border-radius;
+  box-shadow: 0px 0px 5px darken($color-palette-1, 10%);
 }

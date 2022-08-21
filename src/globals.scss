@@ -1,5 +1,6 @@
 $color-palette-1: #ececec;
 $border-radius: 5px;
+$font-size: 16px;
 
 @mixin breakpoint-lg {
   @media (min-width: 992px) {

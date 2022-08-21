@@ -1,22 +1,18 @@
-import path from 'path';
-import { fileURLToPath } from 'url';
 import gulp from 'gulp';
 import dartSass from 'sass';
 import gulpSass from 'gulp-sass';
-import changeFileContent from 'gulp-change-file-content';
-import concat from 'gulp-concat';
+import rename from 'gulp-rename';
 
 const sass = gulpSass(dartSass);
 
-const __dirname = fileURLToPath(new URL('.', import.meta.url));
-
 export const buildStyles = () => gulp
-  .src('./src/scss/**/*.scss')
-  .pipe(changeFileContent((content) => `@import 'globals.scss';\n${content}`))
+  .src('./src/index.scss')
   .pipe(sass.sync({
     includePaths: ['./src', './node_modules'],
   }).on('error', sass.logError))
-  .pipe(concat('style.css'))
+  .pipe(rename('style.css'))
   .pipe(gulp.dest('./dist'));
 
-export default () => gulp.watch('./src/**/*.scss', buildStyles);
+export default () => gulp.watch(
+  './src/**/*.scss', { ignoreInitial: false }, buildStyles
+);

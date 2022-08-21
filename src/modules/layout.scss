@@ -10,13 +10,26 @@ body {
   background-color: $color-palette-1;
 }
 
-.container {
+@mixin centered {
   margin-left: auto;
   margin-right: auto;
+}
 
+.container {
+  @include centered();
   @include breakpoint-lg {
     max-width: 960px;
   }
+}
+
+.small-container {
+  @include centered();
+  max-width: 640px;
+}
+
+.tiny-container {
+  @include centered();
+  max-width: 320px;
 }
 
 .panel {

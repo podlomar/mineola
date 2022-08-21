@@ -1,1 +1,7 @@
 $color-palette-1: #e8e8e8;
+
+@mixin breakpoint-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}

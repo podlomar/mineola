@@ -21,4 +21,9 @@ body {
 
 .panel {
   @include panel;
+
+  &--primary {
+    background-color: $color-palette-3;
+    color: white;
+  }
 }

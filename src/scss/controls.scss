@@ -1,0 +1,13 @@
+button {
+  background-color: $color-palette-2;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+
+  &:active {
+    background-color: darken($color-palette-2, 10%);
+    transform: scale(0.95);
+  }
+}

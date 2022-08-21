@@ -1,10 +1,76 @@
-.columns {
+.cols {
   display: flex;
   margin-left: -0.5rem;
   margin-right: -0.5rem;
 }
 
-.column {
-  flex: 1;
+@mixin col {
   margin: 0.5rem;
+}
+
+@mixin col-n($ord) {
+  @include col;
+  flex: 0 0 calc((100% - 11rem) / 12 * $ord + ($ord - 1) * 1rem);
+}
+
+.col {
+  @include col;
+  flex: 1;
+
+  &-1 {
+    @include col-n(1);
+  }
+
+  &-2 {
+    @include col-n(2);
+  }
+
+  &-3 {
+    @include col-n(3);
+  }
+
+  &-4 {
+    @include col-n(4);
+  }
+
+  &-5 {
+    @include col-n(5);
+  }
+
+  &-6 {
+    @include col-n(6);
+  }
+
+  &-7 {
+    @include col-n(7);
+  }
+
+  &-8 {
+    @include col-n(8);
+  }
+
+  &-9 {
+    @include col-n(9);
+  }
+
+  &-10 {
+    @include col-n(10);
+  }
+
+  &-11 {
+    @include col-n(11);
+  }
+
+  &-12 {
+    @include col-n(12);
+  }
+}
+
+.col-6 {
+  @include col;
+}
+
+.col-4 {
+  @include col;
+  flex: 0 0 calc(33.3333% - 0.5rem);
 }

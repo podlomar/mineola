@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Ubuntu+Mono&display=swap");
 
 $padding-lg-x: 2rem;
+$padding-md-x: 1.5rem;
+$padding-sm-x: 1rem;
 
 html {
   font-family: "Poppins", sans-serif;
@@ -19,11 +21,28 @@ body {
 .container {
   @include centered;
 
-  padding-left: $padding-lg-x;
-  padding-right: $padding-lg-x;
+  max-width: 100%;
+  padding-left: $padding-sm-x;
+  padding-right: $padding-sm-x;
+
+  @include breakpoint-sm {
+    max-width: $width-sm;
+  }
+
+  @include breakpoint-md {
+    max-width: $width-md;
+    padding-left: $padding-md-x;
+    padding-right: $padding-md-x;
+  }
 
   @include breakpoint-lg {
     max-width: $width-lg;
+    padding-left: $padding-lg-x;
+    padding-right: $padding-lg-x;
+  }
+
+  @include breakpoint-xl {
+    max-width: $width-xl;
   }
 }
 

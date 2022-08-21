@@ -1,5 +1,8 @@
 h1,
-h2,
+h2 {
+  font-weight: 300;
+}
+
 h3,
 h4,
 h5,
@@ -21,4 +24,12 @@ h2 {
 
 p {
   margin-bottom: 1rem;
+}
+
+code {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.125rem;
+  background-color: darken($color-palette-1, 10%);
+  padding: 0.25rem 0.5rem;
+  border-radius: $border-radius;
 }

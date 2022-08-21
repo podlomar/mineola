@@ -1,2 +1,3 @@
-# squashy
-Minimalistic CSS framework for teaching
+# Squashy
+
+Minimalistic CSS framework for lecturing purposes.

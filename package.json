@@ -1,0 +1,31 @@
+{
+  "name": "squashy",
+  "version": "0.0.1",
+  "description": "Minimalistic CSS framework for teaching",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/podlomar/squashy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/podlomar/squashy/issues"
+  },
+  "homepage": "https://github.com/podlomar/squashy#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-change-file-content": "^1.0.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.3"
+  },
+  "dependencies": {
+    "modern-css-reset": "^1.4.0"
+  }
+}

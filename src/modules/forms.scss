@@ -24,6 +24,11 @@ form {
     max-width: calc(100% - 10rem);
     margin-left: 0.5rem;
   }
+
+  textarea {
+    min-height: 5rem;
+    resize: none;
+  }
 }
 
 label {

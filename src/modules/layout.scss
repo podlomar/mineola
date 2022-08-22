@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: $color-palette-1;
+  background-color: $palette-1;
 }
 
 @mixin centered {
@@ -65,7 +65,7 @@ body {
   @include panel;
 
   &--primary {
-    background-color: $color-palette-3;
+    background-color: $palette-3;
     color: white;
   }
 }

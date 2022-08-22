@@ -1,13 +1,41 @@
-button {
-  background-color: $color-palette-2;
-  color: white;
-  border: none;
+@mixin button {
+  border: 2px solid $palette-2;
   border-radius: $border-radius;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   cursor: pointer;
 
   &:active {
-    background-color: darken($color-palette-2, 10%);
     transform: scale(0.95);
+    border-color: darken($palette-2, 10%);
+  }
+
+  &:disabled {
+    background-color: $color-silver;
+    color: white;
+    border-color: $color-silver;
+    cursor: default;
+  }
+}
+
+button,
+.btn {
+  @include button;
+
+  background-color: $palette-2;
+  color: white;
+
+  &:active {
+    background-color: darken($palette-2, 10%);
+  }
+}
+
+.btn--secondary {
+  @include button;
+
+  background-color: white;
+  color: black;
+
+  &:active {
+    background-color: #e6e6e6;
   }
 }

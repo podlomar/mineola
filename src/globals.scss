@@ -1,6 +1,11 @@
-$color-palette-1: #ececec;
-$color-palette-2: #f1970e;
-$color-palette-3: #6599ee;
+$color-silver: #a9a9a9;
+$color-cultured: #ececec;
+$color-squash: #f1970e;
+$color-cornflower: #6599ee;
+
+$palette-1: $color-cultured;
+$palette-2: $color-squash;
+$palette-3: $color-cornflower;
 
 $border-radius: 5px;
 $font-size: 16px;
@@ -40,5 +45,5 @@ $width-xl: 1140px;
   padding: 2rem;
   margin-bottom: 1rem;
   border-radius: $border-radius;
-  box-shadow: 0px 0px 5px darken($color-palette-1, 10%);
+  box-shadow: 0px 0px 5px darken($palette-1, 10%);
 }

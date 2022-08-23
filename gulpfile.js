@@ -17,7 +17,7 @@ export const process = () => gulp
 export const minify = () => gulp
   .src('./dist/mineola.css')
   .pipe(csso())
-  .pipe(rename('squasy.min.css'))
+  .pipe(rename('mineola.min.css'))
   .pipe(gulp.dest('./dist'));
 
 export const build = gulp.series(process, minify);

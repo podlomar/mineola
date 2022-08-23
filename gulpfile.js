@@ -11,11 +11,11 @@ export const process = () => gulp
   .pipe(sass.sync({
     includePaths: ['./src', './node_modules'],
   }).on('error', sass.logError))
-  .pipe(rename('squashy.css'))
+  .pipe(rename('mineola.css'))
   .pipe(gulp.dest('./dist'));
 
 export const minify = () => gulp
-  .src('./dist/squashy.css')
+  .src('./dist/mineola.css')
   .pipe(csso())
   .pipe(rename('squasy.min.css'))
   .pipe(gulp.dest('./dist'));

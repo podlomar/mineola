@@ -1,5 +1,5 @@
 {
-  "name": "squashy",
+  "name": "mineola",
   "version": "0.0.1",
   "description": "Minimalistic CSS framework for teaching",
   "main": "index.js",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/podlomar/squashy.git"
+    "url": "git+https://github.com/podlomar/mineola.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/podlomar/squashy/issues"
+    "url": "https://github.com/podlomar/mineola/issues"
   },
-  "homepage": "https://github.com/podlomar/squashy#readme",
+  "homepage": "https://github.com/podlomar/mineola#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",

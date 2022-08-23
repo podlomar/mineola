@@ -1,6 +1,6 @@
 {
   "name": "squashy",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Minimalistic CSS framework for teaching",
   "main": "index.js",
   "type": "module",

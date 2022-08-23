@@ -12,28 +12,58 @@ textarea {
   }
 }
 
+input[type="radio"] {
+  width: 1.15em;
+  height: 1.15em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+  appearance: none;
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid $palette-2;
+  transform: translateY(0.25em);
+
+  &:checked {
+    box-shadow: inset 0px 0px 0px 0.25em $palette-2;
+  }
+}
+
+@mixin form-input {
+  vertical-align: baseline;
+  width: 65%;
+  max-width: calc(100% - 10rem);
+  margin-left: 0.5rem;
+  text-align: left;
+}
+
 form {
   @include panel;
-  text-align: right;
 
   input:not([type="radio"]):not([type="checkbox"]),
   select,
   textarea {
-    vertical-align: baseline;
-    width: 65%;
-    max-width: calc(100% - 10rem);
-    margin-left: 0.5rem;
+    @include form-input;
   }
 
   textarea {
     min-height: 5rem;
     resize: none;
   }
+
+  label {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-bottom: 0.75rem;
+    text-align: right;
+  }
 }
 
-label {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  margin-bottom: 0.5rem;
+.form-input {
+  @include form-input;
+
+  label {
+    display: inline;
+    text-align: initial;
+  }
 }

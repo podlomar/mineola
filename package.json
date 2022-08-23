@@ -31,5 +31,10 @@
   },
   "dependencies": {
     "modern-css-reset": "^1.4.0"
-  }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ]
 }

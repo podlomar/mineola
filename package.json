@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "gulp",
+    "build": "gulp build",
+    "prepublish": "npm run build",
     "demo": "live-server demo --mount=/dist:./dist"
   },
   "repository": {
@@ -21,6 +23,7 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0",
+    "gulp-csso": "^4.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "live-server": "^1.2.2",

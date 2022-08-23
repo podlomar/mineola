@@ -10,9 +10,9 @@
   }
 
   &:disabled {
-    background-color: $color-silver;
+    background-color: $palette-control-disabled;
     color: white;
-    border-color: $color-silver;
+    border-color: $palette-control-disabled;
     cursor: default;
   }
 }
@@ -36,6 +36,6 @@ button,
   color: black;
 
   &:active {
-    background-color: #e6e6e6;
+    background-color: $color-platinum;
   }
 }

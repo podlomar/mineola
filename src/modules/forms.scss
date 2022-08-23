@@ -4,7 +4,7 @@ textarea {
   background-color: white;
   border-radius: $border-radius;
   border: 1px solid gray;
-  outline: 3px solid #eee;
+  outline: 3px solid $palette-control-outline;
   padding: 0.25rem 0.5rem;
 
   &:focus {

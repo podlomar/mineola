@@ -1,4 +1,6 @@
+$color-light-gray: #cecece;
 $color-silver: #a9a9a9;
+$color-platinum: #e5e5e5;
 $color-cultured: #ececec;
 $color-squash: #f1970e;
 $color-cornflower: #6599ee;
@@ -6,6 +8,9 @@ $color-cornflower: #6599ee;
 $palette-1: $color-cultured;
 $palette-2: $color-squash;
 $palette-3: $color-cornflower;
+
+$palette-control-disabled: $color-silver;
+$palette-control-outline: $color-platinum;
 
 $border-radius: 5px;
 $font-size: 16px;

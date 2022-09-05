@@ -52,11 +52,17 @@ form {
 
   label {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: baseline;
     margin-bottom: 0.75rem;
     text-align: right;
   }
+}
+
+.invalid-msg {
+  color: red;
+  flex-basis: 100%;
 }
 
 .form-input {

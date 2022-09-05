@@ -30,15 +30,13 @@ input[type="radio"] {
 
 @mixin form-input {
   vertical-align: baseline;
-  width: 65%;
+  width: 70%;
   max-width: calc(100% - 10rem);
   margin-left: 0.5rem;
   text-align: left;
 }
 
 form {
-  @include panel;
-
   input:not([type="radio"]):not([type="checkbox"]),
   select,
   textarea {
@@ -72,4 +70,9 @@ form {
     display: inline;
     text-align: initial;
   }
+}
+
+.form-controls {
+  margin-top: 2rem;
+  text-align: right;
 }

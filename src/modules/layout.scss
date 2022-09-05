@@ -61,11 +61,18 @@ body {
   max-width: $width-xs;
 }
 
+.box {
+  @include box;
+
+  &--accent {
+    @include accent;
+  }
+}
+
 .panel {
   @include panel;
 
-  &--primary {
-    background-color: $palette-3;
-    color: white;
+  &--accent {
+    @include accent;
   }
 }

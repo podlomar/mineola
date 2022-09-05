@@ -45,10 +45,25 @@ $width-xl: 1140px;
   }
 }
 
+$control-padding: 0.6rem 1rem;
+
+@mixin box {
+  background-color: white;
+  padding: $control-padding;
+  margin-bottom: 0.5rem;
+  border-radius: $border-radius;
+  box-shadow: 0px 0px 5px darken($palette-1, 10%);
+}
+
 @mixin panel {
   background-color: white;
   padding: 2rem;
   margin-bottom: 1rem;
   border-radius: $border-radius;
   box-shadow: 0px 0px 5px darken($palette-1, 10%);
+}
+
+@mixin accent {
+  background-color: $palette-3;
+  color: white;
 }

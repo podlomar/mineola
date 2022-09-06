@@ -15,6 +15,11 @@
     border-color: $palette-control-disabled;
     cursor: default;
   }
+
+  &:disabled:active {
+    transform: none;
+    background-color: $palette-control-disabled;
+  }
 }
 
 button,

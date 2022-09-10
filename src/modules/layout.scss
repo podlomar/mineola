@@ -60,3 +60,21 @@ body {
   @include centered;
   max-width: $width-xs;
 }
+
+header {
+  @include spot;
+
+  padding: 1rem 0;
+}
+
+footer {
+  padding: 2rem 0;
+  margin-top: 3rem;
+  background-color: $color-platinum;
+}
+
+.banner {
+  @include mark;
+
+  padding: 2rem 0;
+}

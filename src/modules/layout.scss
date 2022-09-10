@@ -60,19 +60,3 @@ body {
   @include centered;
   max-width: $width-xs;
 }
-
-.box {
-  @include box;
-
-  &--accent {
-    @include accent;
-  }
-}
-
-.panel {
-  @include panel;
-
-  &--accent {
-    @include accent;
-  }
-}

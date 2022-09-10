@@ -1,19 +1,18 @@
+$color-cultured: #f0f2f4;
+$color-dark-turquoise: #0cd2e1;
 $color-light-gray: #cecece;
 $color-silver: #a9a9a9;
 $color-platinum: #e5e5e5;
-$color-cultured: #ececec;
 $color-squash: #f1970e;
 $color-cornflower: #6599ee;
 
 $palette-1: $color-cultured;
 $palette-2: $color-squash;
 $palette-3: $color-cornflower;
+$palette-4: $color-dark-turquoise;
 
 $palette-control-disabled: $color-silver;
 $palette-control-outline: $color-platinum;
-
-$border-radius: 5px;
-$font-size: 16px;
 
 $width-xs: 360px;
 $width-sm: 540px;
@@ -45,25 +44,4 @@ $width-xl: 1140px;
   }
 }
 
-$control-padding: 0.6rem 1rem;
-
-@mixin box {
-  background-color: white;
-  padding: $control-padding;
-  margin-bottom: 0.5rem;
-  border-radius: $border-radius;
-  box-shadow: 0px 0px 5px darken($palette-1, 10%);
-}
-
-@mixin panel {
-  background-color: white;
-  padding: 2rem;
-  margin-bottom: 1rem;
-  border-radius: $border-radius;
-  box-shadow: 0px 0px 5px darken($palette-1, 10%);
-}
-
-@mixin accent {
-  background-color: $palette-3;
-  color: white;
-}
+$font-size: 16px;

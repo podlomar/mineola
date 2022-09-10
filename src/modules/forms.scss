@@ -2,7 +2,7 @@ input:not([type="radio"]):not([type="checkbox"]),
 select,
 textarea {
   background-color: white;
-  border-radius: $border-radius;
+  border-radius: $box-border-radius;
   border: 1px solid gray;
   outline: 3px solid $palette-control-outline;
   padding: 0.25rem 0.5rem;

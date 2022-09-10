@@ -1,7 +1,7 @@
 @mixin button {
   border: 2px solid $palette-2;
-  border-radius: $border-radius;
-  padding: $control-padding;
+  border-radius: $box-border-radius;
+  padding: $stripe-padding;
   cursor: pointer;
 
   &:active {

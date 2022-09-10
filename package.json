@@ -8,8 +8,8 @@
     "dev": "gulp",
     "clean": "rimraf dist",
     "build": "npm run clean && gulp build",
-    "prepublish": "npm run build",
-    "demo": "live-server demo --mount=/dist:./dist"
+    "demo": "live-server demo --mount=/dist:./dist",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
